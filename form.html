@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Entry Data Pegawai</title>
+    <link rel="stylesheet" href="assets/form.css">
+</head>
+
+<body>
+    <h3>Registrasi Kendaraan Anda</h3>
+    <form action="#">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <label>Status</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="mahasiswa" id="mahasiswa">
+                        <span class="span-mahasiswa">Mahasiswa</span>
+                        <input type="radio" name="dosen" id="dosen" checked="checked">
+                        <span>Dosen</span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim">NIM/NIDN</label>
+                    </td>
+                    <td>
+                        <input type="number" name="nim" id="nim" placeholder=" Isi Nim Anda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="namaLengkap">Nama Lengkap :</label>
+                    </td>
+                    <td>
+                        <input type="text" name="namaLengkap" id="namaLengkap" placeholder=" Isi Nama Lengkap Anda">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prodi">Prodi :</label>
+                    </td>
+                    <td>
+                        <select name="prodi" id="prodi">
+                            <option value="">- Pilih Prodi -</option>
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="BD">Bisnis Digital</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Jenis Kendaraan</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="motor" id="motor" checked="checked">
+                        <span>Motor</span>
+                        <input type="radio" name="mobil" id="mobil">
+                        <span>Mobil</span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="noPol">NoPol</label>
+                    </td>
+                    <td>
+                        <input type="number" name="noPol" id="noPol" placeholder=" Isi Nomor Polisi Kendaraan">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="merk">Merk</label>
+                    </td>
+                    <td>
+                        <input type="text" name="merk" id="merk" placeholder=" Isi Merk Kendaraan">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="stnk">Upload STNK</label>
+                    </td>
+                    <td>
+                        <input type="text" name="stnk" id="stnk" readonly placeholder=" Upload STNK">
+                        <Button type="submit" class="btn-upload">Browser</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <Button type="submit" class="btn-daftar">Daftar</Button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
